@@ -1,4 +1,4 @@
-# vyatta-TEMPLATE
+# vyatta-web
 
 This repository provides a debian package for a webserver 
 to serve static files like debian 
