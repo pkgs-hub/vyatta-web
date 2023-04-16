@@ -1,5 +1,6 @@
 Package: vyatta-web
 Version: 1.0.0
 Architecture: amd64
+Depends: python3
 Maintainer: pkgs-hub <https://github.com/pkgs-hub>
 Description: webserver for vyatta to serve static files
