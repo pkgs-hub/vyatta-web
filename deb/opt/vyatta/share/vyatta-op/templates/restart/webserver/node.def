@@ -1,0 +1,2 @@
+help: Restart Webserver
+run: sudo systemctl restart vyatta-web

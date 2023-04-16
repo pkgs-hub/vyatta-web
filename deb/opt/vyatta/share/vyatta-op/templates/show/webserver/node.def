@@ -1,0 +1,2 @@
+help: Show Webserver status
+run: systemctl status vyatta-web

@@ -15,14 +15,14 @@ from jinja2 import Template
 
 airbag.enable()
 
-config_file = r'/etc/default/TEMPLATE'
+config_file = r'/etc/default/vyatta-web'
 
 def get_config(config=None):
     if config:
         conf = config
     else:
         conf = Config()
-    base = ['service', 'monitoring', 'TEMPLATE']
+    base = ['service', 'webserver']
     if not conf.exists(base):
         return None
 
@@ -43,7 +43,7 @@ def generate(template_config):
             os.unlink(config_file)
         return None
 
-    with open('/opt/vyatta-TEMPLATE/config.j2', 'r') as tmpl, open(config_file, 'w') as out:
+    with open('/opt/vyatta-web/config.j2', 'r') as tmpl, open(config_file, 'w') as out:
         template = Template(tmpl.read()).render(data=template_config)
         out.write(template)
 
@@ -55,10 +55,10 @@ def generate(template_config):
 def apply(template_config):
     if node_exporter is None:
         # template_config is removed in the commit
-        call('systemctl stop TEMPLATE.service')
+        call('systemctl stop vyatta-web.service')
         return None
 
-    call('systemctl restart TEMPLATE.service')
+    call('systemctl restart vyatta-web.service')
     return None
 
 if __name__ == '__main__':

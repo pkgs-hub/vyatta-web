@@ -1,0 +1,2 @@
+help: Show Webserver logs
+run: journalctl -u vyatta-web | less

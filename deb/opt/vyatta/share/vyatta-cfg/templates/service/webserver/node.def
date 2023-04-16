@@ -1,0 +1,2 @@
+help: Webserver configuration
+end: sudo sh -c "${vyshim} /opt/vyatta-web/config.py"

@@ -1,2 +1,0 @@
-help: Show TEMPLATE status
-run: systemctl status TEMPLATE
