@@ -53,7 +53,7 @@ def generate(template_config):
     return None
 
 def apply(template_config):
-    if webserver is None:
+    if template_config is None:
         # template_config is removed in the commit
         call('systemctl stop vyatta-web.service')
         return None
