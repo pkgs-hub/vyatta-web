@@ -1,8 +1,8 @@
-{%- for key, value in data.items() -%}
+{% for key, value in data.items() %}
   {%- if key == 'listen-address' -%}
     BIND_IP={{ value }}
-  {%- endif -%}
+  {%- endif %}
   {%- if key == 'port' -%}
     BIND_PORT={{ value }}
-  {%- endif -%}
-{%- endfor -%}
+  {%- endif %}
+{% endfor %}
