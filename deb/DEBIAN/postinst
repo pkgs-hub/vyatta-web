@@ -1,0 +1,2 @@
+chmod +x /opt/vyatta-TEMPLATE/config.py
+systemctl daemon-reload

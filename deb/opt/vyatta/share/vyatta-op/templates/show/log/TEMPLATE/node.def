@@ -1,0 +1,2 @@
+help: Show TEMPLATE logs
+run: journalctl -u TEMPLATE | less

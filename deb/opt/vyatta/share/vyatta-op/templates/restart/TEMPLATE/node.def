@@ -1,0 +1,2 @@
+help: Restart TEMPLATE
+run: sudo systemctl restart TEMPLATE

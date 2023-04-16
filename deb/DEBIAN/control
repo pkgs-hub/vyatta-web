@@ -1,0 +1,5 @@
+Package: vyatta-TEMPLATE
+Version: 1.0.0
+Architecture: amd64
+Maintainer: pkgs-hub <https://github.com/pkgs-hub>
+Description: TEMPLATE for vyatta

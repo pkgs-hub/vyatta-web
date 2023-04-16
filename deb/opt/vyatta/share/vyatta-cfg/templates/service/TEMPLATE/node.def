@@ -1,0 +1,2 @@
+help: TEMPLATE configuration
+end: sudo sh -c "${vyshim} /opt/vyatta-TEMPLATE/config.py"

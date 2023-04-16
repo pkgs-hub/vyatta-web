@@ -1,0 +1,9 @@
+[Unit]
+Description=Node Exporter
+
+[Service]
+EnvironmentFile=/etc/default/TEMPLATE
+ExecStart=/opt/vyatta-TEMPLATE/TEMPLATE $OPTIONS
+
+[Install]
+WantedBy=multi-user.target
